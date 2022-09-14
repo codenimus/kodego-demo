@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <main>
+        <form action="GET">
+            <section>
+                <h1>Learn HTML Form</h1>
+                <p>
+                    <label for="fname">Full Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="fname" class="input-field"
+                        placeholder="Your Full Name Here" required>
+                </p>
+                <p>
+                    <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" id="mypassword" name="mypassword" class="input-field"
+                        placeholder="**********" maxlength="10" required>
+                </p>
+                <p>
+                    <label for="email">Email Adress</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" id="myemail" name="myemail" class="input-field"
+                        placeholder="example@email.com" required>
+                </p>
+                <p>
+                    <span>Status</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="single-status">Single
+                        <input type="radio" name="status" id="single-status" value="S"></label>
+                        
+                    <label for="married-status">Married
+                        <input type="radio" name="status" id="married-status" value="M"></label>
+
+                    <label for="widow-status">Widow
+                        <input type="radio" name="status" id="widow-status" value="W"></label> 
+                </p>
+                <p>
+                    <label for="date-of-birth">Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="date" name="dob" id="mydob" required>
+                </p>
+                <p>
+                    <label for="age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" name="age" id="myage" value="18" required>
+                <p>
+                    <span>Government Benefits</span>
+                    <label for="sss"><input type="checkbox" name="sss" id="mysssid">
+                        SSS</label>
+
+                    <label for="hdmf"><input type="checkbox" name="hdmf" id="myhdmf">
+                        HDMF</label>
+
+                    <label for="philhealth"><input type="checkbox" name="philhealth" id="myphilhealth">
+                        PhilHealth</label>
+                </p>
+                <p>
+                    <label for="schedule">Preferred Schadule</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="time" name="schedule" id="myschedule" required>
+                </p>
+                <p>
+                    <label for="payout-option">Payout Options</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="payout" id="mypayoutoption">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="daily">Daily</option>
+                        </select>
+                </p>
+                <p>
+                    <label for="internet-provider">Internet Provider</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="internet-provider" id="myinternet" class="input-field"
+                        placeholder="starlink, globe, converge" required>
+                </p>
+                <p>
+                    <label for="upload-id-photo">Upload ID Photo</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="file" name="upload-id-photo" id="myuploadphoto">
+                </p>
+                <p>
+                    <span>Additional Info</span>
+                    <textarea name="additional-info" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit">Submit</button>
+                </p>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
