@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Exercise 9: Basic CSS</title>
         <style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,300&display=swap');
+
         h1 {
             text-transform: uppercase;
             text-shadow: 2px 2px turquoise;
@@ -25,6 +27,15 @@
             padding-top: 20px;
         }
 
+		body { 
+			font-size: 1.2em;
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+			border: 1px solid green;
+			margin: 25px 50px 75px 100px;
+			background-color: rgb(155, 209, 155);
+		}
+
         a:link, a:visited {
             background-color: turquoise;
             color: black;
@@ -40,6 +51,14 @@
             font-weight: bold;
         }
 
+		.separator {
+			text-decoration: underline;
+			font-style: italic;
+		}
+
+		.boxed {
+			border: solid green;
+		}
         </style>
 	</head>
 	<body>
@@ -49,7 +68,7 @@
 				<h2>Learning CSS3 selectors - "The basics"
 				</h2>
 				<div>
-					<img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="css-code-screen">
+					<img src="images/learn-css.png" alt="css-code-screen">
 				</div>
 				<p>
 					To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.
@@ -85,10 +104,11 @@
 
 					<p>
 
-						Type a period (.) and a class name, then open and close your decalration block with curly brackets.
-
+						Type a <span class="separator">period</span> (.) and a class name, then open and close your decalration block with curly brackets.
+						<br>
+						<a href="#">read more</a>
 					</p>
-					<a href="#">read more</a>
+					
 
 				</section>
 
@@ -98,7 +118,7 @@
 				<p>
 					You can look for elements that have a certain HTML attribute, or have a certain value for an HTML attribute, using the attribute selector.
 					<br>
-					Instruct CSS to look for attributes by wrapping the selector with square brackets
+					Instruct CSS to look for attributes by wrapping the selector with <span class="separator">square brackets</span>
 																																																																																																																																							(<span>[ ]</span>).
 
 					<br>
@@ -124,17 +144,18 @@
 				</p>
 				<p>
 					For example, an HTML element could be hovered with the mouse pointer by a user or a child element could also be hovered by the user. For those situations, use the
-					<span>:hover</span>
+					<span class="sample-code">:hover</span>
 					pseudo-class.
 
 					<a href="#">read more</a>
 
 				</p>
-				<p>
+
 					<h3>
 						Pseudo-element #
 					</h3>
-					Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a single colon (<span>:</span>), we use a double colon (<span>::</span>)
+				<p>	
+					Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a <span class="separator">single colon</span> (<span>:</span>), we use a <span class="separator">double colon</span> (<span>::</span>)
 
 					<a href="#">read more</a>
 
@@ -144,7 +165,7 @@
 				<h2>Learning CSS3 selectors - "Combinators Selectors"</h2>
 
 				<p>
-					A combinator is what sits between two selectors. For example, if the selector was p > strong, the combinator is the > character. The selectors which use these combinators help you select items based on their position in the document.
+					A combinator is what sits between two selectors. For example, <span class="separator">if the selector was</span> <span class="sample-code">p > strong</span>, <span class="separator">the combinator</span> is the <span class="sample-code">></span> character. The selectors which use these combinators help you select items based on their position in the document.
 
 					<a href="#">read more</a>
 				</p>
@@ -155,10 +176,12 @@
 
 				</p>
 				<p>
-					&lt;p&gt;A paragraph of text with some &lt;/strong&gt; bold text for emphasis&lt;/strong&gt;.&lt;/p&gt;
+					<span class="boxed">
+					<span class="sample-code">&lt;p&gt;</span>A paragraph of text with some <span class="sample-code">&lt;/strong&gt;</span> bold text for emphasis<span class="sample-code">&lt;/strong&gt;</span>.<span class="sample-code">&lt;/p&gt;</span>
+					</span>
 				</p>
 				<p>
-					The parent element is the &lt;p&gt; which contains text. Inside that &lt;p&gt; element is a &lt;strong&gt; element, making its content bold. Because it is inside the &lt;p&gt;, it is a child element.
+					The parent element is the <span class="sample-code">&lt;p&gt;</span> which contains text. Inside that <span class="sample-code">&lt;p&gt;</span> element is a <span class="sample-code">&lt;strong&gt;</span> element, <span class="separator">making its content bold</span>. Because it is inside the <span class="sample-code">&lt;p&gt;</span>, <span class="separator">it is a child element</span>.
 					<a href="#">read more</a>
 
 				</p>
