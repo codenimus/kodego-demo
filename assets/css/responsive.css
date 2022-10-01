@@ -18,6 +18,11 @@ nav {
     text-decoration: none;
 }
 
+.li-nav-items a:hover, a:active {
+    font-weight: bold;
+    border-bottom: 2px solid #ff5a5f;
+}
+
 .create-post-btn {
     background-color: #ff5a5f;
     padding: 6px 20px;
@@ -44,6 +49,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 p {
@@ -87,6 +93,11 @@ header {
     color: #333;
 }
 
+.header-content a:hover, a:active {
+    color: #fff;
+    background: #ff5a5f;
+}
+
 .header div p {
     margin: 40px;
 }
@@ -117,7 +128,19 @@ main {
 }
 
 .post-author {
+    font-weight: bold;
     margin: 10px;
+}
+
+.post-read-more {
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background: #ff5a5f;
+    padding: 3px;
+    text-decoration: none;
 }
 
 aside {
