@@ -179,8 +179,10 @@ footer {
     color: white;
 }
 
-.about p {
+.about h1, p {
     color: #8d99ae;
+    text-align: center;
+
 }
 
 .logo-text {
