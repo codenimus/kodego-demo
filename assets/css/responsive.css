@@ -82,6 +82,10 @@ header {
     padding: 10px;
 }
 
+.header-content p {
+    color: #14213d;
+}
+
 .header-content a {
     border: 1px solid #333;
     padding: 15px 20px;
