@@ -75,3 +75,8 @@ a:link {
     height: 50%;
     object-fit: cover;
 }
+
+.dropdown-menu a:active {
+    color:#198754;
+    background-color: gold;
+}
