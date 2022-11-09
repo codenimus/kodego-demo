@@ -13,26 +13,31 @@ function checkNum()
   }
 }
 
-// F&#176 to C&#176
+// &#176F to &#176C
 function tempConvert(valNum) {
     valNum = parseFloat(valNum);
-    document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8 + " &#176C";
   }
 
-// C&#176 to F&#176
+// &#176C to &#176F
   function tempConvert2(valNum) {
     valNum = parseFloat(valNum);
-    document.getElementById("outputFahrenheit").innerHTML = (valNum*1.8) + 32;
+    document.getElementById("outputFahrenheit").innerHTML = (valNum * 1.8) + 32 + " &#176F";
   }
 
   // Convert Feet to Meters
   function lengthConvert(valNum) {
-    document.getElementById("outputMeter").innerHTML = valNum / 3.2808;
+    document.querySelector("#outputMeter").innerHTML = valNum / 3.2808 + " meters";
   }
 
-  // Convert Meters to Feet
+  // Convert Meters to Feet-Inches
   function lengthConvert2(valNum) {
-    document.getElementById("outputFeet").innerHTML = valNum * 3.2808;
+    var feet, feetTotal, inch;
+    feetTotal = valNum * 3.2808;
+    feet = Math.floor(feetTotal);
+    inch = Math.round(feetTotal % 1 * 12);
+    var outputString = `${feet} feet and ${inch} inches`;
+    document.getElementById("outputFeet").innerHTML = outputString;
   }
 
   // Switch...Case

@@ -46,28 +46,28 @@
     </nav>
 
     <section class="container">
-        <h1 class="text-center my-2 py-2">Feet to Meters Converter (Using <code><mark>function</mark></code>)</h1>
-        <p class="text-center text-muted fs-5">Created a HTML page that converts Feet measurements to Meter</p>
+        <h1 class="text-center my-2 py-2">Basic Length/Height Converter (Using <code><mark>function</mark></code>)</h1>
+        <p class="text-center text-muted fs-5">Created a HTML page that converts Feet measurements to Meter, and Meter to Feet-Inches</p>
     <div class="m-1 p-1">
         <div class="row mx-2 px-2">
             <div class="col-lg-6">
-                <h3 class="alert alert-success text-muted text-center">Convert Heights from Feet to Meters</h3>
+                <h3 class="alert alert-success text-muted text-center">Convert from Feet to Meters</h3>
                 <div class="input-group bg-danger bg-opacity-10 shadow-lg p-3 mb-5 rounded">
                     <div>
-                    <input type="number" id="inputFeet" class="form-control fst-italic" placeholder="Feet" aria-label="Feet" oninput="lengthConvert(this.value)">
+                    <input type="number" id="inputFeet" class="form-control fst-italic" placeholder="Value in Feet" aria-label="Value in Feet" oninput="lengthConvert(this.value)">
                     </div>
                     <div class="ms-2">
-                    = <span class="fst-italic" id="outputMeter"></span> Meters
+                    <span class="fst-italic" id="outputMeter">to Meters</span>
                     </div>
                 </div>
                    
-                <h3 class="alert alert-success text-muted text-center">Convert Height from Meters to Feet</h3>
+                <h3 class="alert alert-success text-muted text-center">Convert from Meters to Feet-Inches</h3>
                 <div class="input-group bg-danger bg-opacity-10 shadow-lg p-3 mb-5 rounded">
                     <div>
-                    <input type="number" id="inputFeet" class="form-control fst-italic" placeholder="Meters" aria-label="Meters" oninput="lengthConvert2(this.value)">
+                    <input type="number" id="inputFeet" class="form-control fst-italic" placeholder="Value in Meters" aria-label="Value in Meters" oninput="lengthConvert2(this.value)">
                     </div>
                     <div class="ms-2">
-                    = <span class="fst-italic" id="outputFeet"></span> Feet
+                    <span class="fst-italic" id="outputFeet">to Feet-Inches</span>
                     </div>
                 </div>
             </div>
@@ -75,15 +75,20 @@
                 <h3 class="alert alert-danger text-muted text-center">Solution</h3>
                 <code>
                 <pre class="bg-success bg-opacity-10 p-3">
-        // Convert Feet to Meters
-        function lengthConvert(valNum) {
-            document.getElementById("outputMeter").innerHTML = valNum / 3.2808;
-        }
+// Convert Feet to Meters
+function lengthConvert(valNum) {
+    document.querySelector("#outputMeter").innerHTML = + valNum / 3.2808 + " meters";
+}
                   
-        // Convert Meters to Feet
-        function lengthConvert2(valNum) {
-            document.getElementById("outputFeet").innerHTML = valNum * 3.2808;
-        }       
+// Convert Meters to Feet-Inches
+function lengthConvert2(valNum) {
+    var feet, feetTotal, inch;
+    feetTotal = valNum * 3.2808;
+    feet = Math.floor(feetTotal);
+    inch = Math.round(feetTotal % 1 * 12);
+    var outputString = `${feet} feet and ${inch} inches`;
+    document.getElementById("outputFeet").innerHTML = outputString;
+}       
                 </pre>
                 </code>
             </div>

@@ -57,26 +57,26 @@
                     <input type="number" id="num" class="form-control" placeholder="Enter Value" aria-label="Enter Value" aria-describedby="button-addon2">
                     <button class="btn btn-outline-success" onclick="checkNum()" type="button" id="button-addon2">Check</button>
                   </div>
-                  <p class="pt-2" id="displayNum" style="display:none;">is an <span class="fw-bold" id="adiben"></span> number</p>
+                  <p class="fst-italic pt-2" id="displayNum" style="display:none;">is an <span class="fw-bold" id="adiben"></span> number</p>
                 </div>
             </div>
             <div class="col-lg-6 mb-5">
                 <h3 class="alert alert-danger text-muted text-center">Solution</h3>
                 <code>
                 <pre class="bg-success bg-opacity-10 p-3">
-        function checkNum()
-        {
-            num = parseInt(document.getElementById("num").value);
-            if(num)
-            {
-            varNum = document.getElementById("displayNum");
-            varNum.style.display = "block";
-            if(num%2==0)
-                document.getElementById("adiben").innerHTML = "Even";
-            else
-                document.getElementById("adiben").innerHTML = "Odd";
-            }
-        }
+function checkNum()
+{
+    num = parseInt(document.getElementById("num").value);
+    if(num)
+    {
+    varNum = document.getElementById("displayNum");
+    varNum.style.display = "block";
+    if(num%2==0)
+        document.getElementById("adiben").innerHTML = "Even";
+    else
+        document.getElementById("adiben").innerHTML = "Odd";
+    }
+}
                 </pre>
                 </code>
             </div>

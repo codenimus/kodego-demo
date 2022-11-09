@@ -64,38 +64,38 @@
                 <h3 class="alert alert-danger text-muted text-center">Solution</h3>
                 <code>
                 <pre class="bg-success bg-opacity-10 p-3">
-        // Switch...Case
-        function showDay() {
-            let dayOfWeek = document.getElementById("selectDay").value;
-            var displayMsg;
+// Switch...Case
+function showDay() {
+    let dayOfWeek = document.getElementById("selectDay").value;
+    var displayMsg;
                   
-        switch(dayOfWeek) {
-         case "Sunday":
-            displayMsg = "It is the Lord's day! Let's go to church!";
-            break;
-         case "Monday":
-            displayMsg = "Have a good start of your week's day!";
-            break;
-         case "Tuesday":
-            displayMsg = "Way to go! You've got 3 more days before weekends!";
-            break;
-         case "Wednesday":
-            displayMsg = "Wow! It's mid-week! Are you excited for the coming sale!";
-            break;
-         case "Thursday":
-            displayMsg = "Come on, let's grab some coffee!";
-            break;
-         case "Friday":
-            displayMsg = "Today is Black Friday Sale! You gotta fill that shopping cart!";
-            break;
-         case "Saturday":
-            displayMsg = "You know the Pinoy saying when this day comes... Sabado nights! But don't stay up late...";
-            break;  
-         default:
-            displayMsg = "Can't process... Write the day properly (e.g. 'Monday')";
-        }
-            document.getElementById("dayGreet").innerHTML = displayMsg;
-        }
+switch(dayOfWeek) {
+    case "Sunday":
+        displayMsg = "It is the Lord's day! Let's go to church!";
+        break;
+    case "Monday":
+        displayMsg = "Have a good start of your week's day!";
+        break;
+    case "Tuesday":
+        displayMsg = "Way to go! You've got 3 more days before weekends!";
+        break;
+    case "Wednesday":
+        displayMsg = "Wow! It's mid-week! Are you excited for the coming sale!";
+        break;
+    case "Thursday":
+        displayMsg = "Come on, let's grab some coffee!";
+        break;
+    case "Friday":
+        displayMsg = "Today is Black Friday Sale! You gotta fill that shopping cart!";
+        break;
+    case "Saturday":
+        displayMsg = "You know the Pinoy saying when this day comes... Sabado nights! But don't stay up late...";
+        break;  
+    default:
+        displayMsg = "Can't process... Write the day properly (e.g. 'Monday')";
+    }
+        document.getElementById("dayGreet").innerHTML = displayMsg;
+}
                 </pre>
                 </code>
             </div>
