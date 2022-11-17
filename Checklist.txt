@@ -1,0 +1,71 @@
+A. Layouts
+
+https://github.com/erwinmacaraig/JavaScriptPrj.git
+
+B. Contents
+
+
+C. Forms
+
+
+D. Components
+	1. Navbar
+	2. Navs & Tabs
+
+E. Utilities
+
+
+#198754
+
+
+https://cdn.pixabay.com/photo/2016/04/05/03/18/prayer-1308663__340.jpg
+
+John 8:32
+
+
+Defence Presentation Outline
+
+1. Title of Website
+	a. why this website
+	b. for whom is the web
+
+2. Discuss what's in the HOME
+
+
+<-- <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2016/01/26/05/29/type-1161949_960_720.jpg" class="card-img-top" alt="manual-publish">
+              <div class="card-body">
+                <h5 class="card-title">We Publish</h5>
+                <p class="card-text"><span class="fst-italic">God reavealed Himsels in a book</span> (<a href="https://biblia.com/bible/esv/2Ti3.16" target="_blank"><span class="text-success">Tim. 3:16</span></a>). In that sense, reading is an essential part of every Christian's life.
+                  For now, we publish online articles with downloadable PDFs so that Christians can grow in their understanding of God and of themselves. We plan to publish physical books as well.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2019/03/19/09/03/studio-4065108_960_720.jpg" class="card-img-top" alt="podcast-set-up">
+              <div class="card-body">
+                <h5 class="card-title">We Broadcast</h5>
+                <p class="card-text"><span class="fst-italic">Faith comes by hearing</span> (<a href="https://biblia.com/bible/esv/Ro10.17" target="_blank"><span class="text-success">Rom. 10:17</span></a>).
+                  That makes hearing the word of Christ is essential to our spiritual life. Every week, we air podcasts, video teaching series and more.
+                  We're always adding trustworthy and curated teachings from other reformed teachers will soon be available 24/7.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2013/02/14/05/02/new-york-city-81533_960_720.jpg" class="card-img-top" alt="church-congregation">
+              <div class="card-body">
+                <h5 class="card-title">We Converge</h5>
+                <p class="card-text"><span class="fst-italic">Iron sharpens iron</span> (<a href="https://biblia.com/bible/esv/Pr27.17" target="_blank"><span class="text-success">Prov. 27:17</span></a>).
+                  Aside from converging online through livestreams, we aim to expand our Christian gatherings at physical events
+                  to study God's Word for mutual edification; to bless the local church and strengthen its members for greater service.</p>
+                </div>
+            </div>
+          </div> 
+        </div>
+	</div> -->
+
